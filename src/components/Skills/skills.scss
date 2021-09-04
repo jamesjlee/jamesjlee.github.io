@@ -12,13 +12,27 @@
     background-color: transparent;
     resize: both;
 
-    @media (min-width: 1200px) {
-        height: 65vh;
+    @media (min-width: 280px) {
+        font-size: 0.8em;
+    }
+
+    @media (min-width: 768px) { 
+        height: 90vh;
+        font-size: 0.8em;
     }
 
     @media (min-width: 992px) { 
-        height: 65vh;
+        height: 80vh;
+        font-size: 1em;
     }
+
+    @media (min-width: 1200px) {
+        height: 70vh;
+        font-size: 1.5em;
+    }
+
+  
+
 
     .description {
         min-height: 5vh;

@@ -41,6 +41,8 @@ const SkillTree = () => {
         return "⭐⭐⭐⭐";
       case 5:
         return "⭐⭐⭐⭐⭐";
+      default:
+        return "";
     }
   };
 
