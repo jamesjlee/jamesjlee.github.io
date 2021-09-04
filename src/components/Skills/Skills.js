@@ -5,9 +5,7 @@ import "./skills.scss";
 const Skills = forwardRef((props, ref) => {
   return (
     <section className="skills" ref={ref}>
-      <div className="description">
-        Professional Development Skills (Comfort Levels ranging from 1-5)
-      </div>
+      <div className="description">Professional Development Skills</div>
       <SkillTree />
     </section>
   );

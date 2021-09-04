@@ -20,35 +20,48 @@ const skills = [
   },
   {
     name: "React",
-    level: 5,
+    level: 4,
     children: [
       { name: "Redux", level: 4 },
-      { name: "Hooks", level: 4 },
+      { name: "Hooks", level: 3 },
     ],
   },
 ];
 
 const SkillTree = () => {
+  const stars = (level) => {
+    switch (level) {
+      case 1:
+        return "⭐";
+      case 2:
+        return "⭐⭐";
+      case 3:
+        return "⭐⭐⭐";
+      case 4:
+        return "⭐⭐⭐⭐";
+      case 5:
+        return "⭐⭐⭐⭐⭐";
+    }
+  };
+
   return (
     <div className="skill-tree">
       {skills.map((skill, index) => {
         return (
           <div key={index} className="container">
             <div className="skill-wrapper">
-              <h3 className="description">Core</h3>
               <div className="skill">
                 <div className="name">{skill.name}</div>
-                <div className="level">{skill.level}</div>
+                <div className="level">{stars(skill.level)}</div>
               </div>
             </div>
             <div className="subskill-container">
               {skill.children.map((leafSkill, leafSkillIndex) => {
                 return (
-                  <div className="subskill-wrapper">
-                    <h3 className="description">Sub</h3>
-                    <div key={leafSkillIndex} className="subskill">
+                  <div className="subskill-wrapper" key={leafSkillIndex}>
+                    <div className="subskill">
                       <div className="name">{leafSkill.name}</div>
-                      <div className="level">{leafSkill.level}</div>
+                      <div className="level">{stars(leafSkill.level)}</div>
                     </div>
                   </div>
                 );

@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border: 1px solid bisque;
+    background-color:blueviolet;
+    border: 1px solid beige;
     border-radius: 1em;
     padding: 2em;
     flex-wrap: wrap;
@@ -17,7 +18,7 @@
 
     .container {
         display: flex;
-        border: 5px dotted beige;
+        border: 5px dashed beige;
         flex-direction: column;
         padding: 0 3em 0;
         width: fit-content;
@@ -26,8 +27,8 @@
     .skill {
         display: flex;
         flex-direction: column;
-        border: 1px solid bisque;
-        color: bisque;
+        border: 1px solid beige;
+        color: beige;
     }
 
     .subskill-container {
@@ -42,8 +43,8 @@
                 display: flex;
                 flex-direction: column;
                 padding: 2em;
-                color: bisque;
-                border: 1px solid bisque;
+                color: beige;
+                border: 1px solid beige;
                 border-radius: 1%;
             }
         }
