@@ -1,0 +1,64 @@
+.skill-tree {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid bisque;
+    border-radius: 1em;
+    padding: 2em;
+    flex-wrap: wrap;
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 0;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        border: 5px dotted beige;
+        flex-direction: column;
+        padding: 0 3em 0;
+        width: fit-content;
+    }
+
+    .skill {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid bisque;
+        color: bisque;
+    }
+
+    .subskill-container {
+        display: flex;
+        flex-direction: row;
+
+        .subskill-wrapper {
+            display: flex;
+            flex-direction: column;
+
+            .subskill {
+                display: flex;
+                flex-direction: column;
+                padding: 2em;
+                color: bisque;
+                border: 1px solid bisque;
+                border-radius: 1%;
+            }
+        }
+    }
+    
+    .name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .level {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

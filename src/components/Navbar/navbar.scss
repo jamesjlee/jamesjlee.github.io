@@ -1,0 +1,20 @@
+.navbar {
+    display: flex;
+    background-color: lightcoral;
+    min-height: 5vh;
+    position: sticky;
+    top: 0;
+    padding: 1em;
+    flex-wrap: wrap;
+
+    button {
+        color: beige;
+        background: transparent;
+        opacity: 80%;
+        border-color: transparent;
+        margin-left: 5em;
+        font-weight: bolder;
+        font-size: 2.5em;
+        cursor: pointer;
+    }
+}
